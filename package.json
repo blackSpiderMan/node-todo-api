@@ -1,16 +1,23 @@
 {
-  "name": "node-todo-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "mongodb": "^3.0.0-rc0"
-  }
+    "name": "node-todo-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha server/**/*.test.js",
+        "test-watch": "nodemon --exec \"npm test\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "mongodb": "^3.0.0-rc0"
+    },
+    "devDependencies": {
+        "expect": "^22.0.1",
+        "mocha": "^4.0.1",
+        "nodemon": "^1.13.3",
+        "supertest": "^3.0.0"
+    }
 }
